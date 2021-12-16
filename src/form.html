@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta charset="utf-8">
 		<title>Form</title>
 		<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
@@ -14,6 +15,31 @@
 			<a href="./index.html">Home</a>
 			<a href="./form.html">Cadastrar</a>
 		</section>
+
+		 <form class="formulario">
+		 	<div class="linha-formulario">
+			 	<label class="label-grande" for="name">Nome</label>
+			 	<input type="text" placeholder="Nome" name="name" id="name" required>
+		 	</div>
+
+		 	<div class="linha-formulario">
+			 	<label class="label-grande" for="phone">Telefone</label>
+			 	<input type="text" placeholder="Telefone" name="phone" id="phone" required>
+		 	</div>
+
+		 	<div class="linha-formulario xp-line" style="display: flex;">
+			 	<label class="label-grande xp-line" for="xp">Experiência prévia</label>
+			 	<div>
+				 	<input type="radio" name="xp" id="xp-yes">
+				 	<label  for="xp-yes">Sim</label>
+				 	<br>
+				 	<input type="radio" name="xp" id="xp-no">
+				 	<label  for="xp-no">Não</label>
+			 	</div>
+		 </div>
+
+		 	<input type="submit" name="">
+		 </form>
 
 	</body>
 </html>

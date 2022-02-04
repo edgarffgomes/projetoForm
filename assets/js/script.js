@@ -1,29 +1,14 @@
-//Array de objeto com informações da tabela:
-	let people = [{
-		name: `Edgar F.F.Gomes`,
-		telephone: `22555555555`,
-		xp: false,
-		},
-		{
-			name: `Jorge dos Santos`,
-			telephone: `22333333333`,
-			xp: true,
-		},
-			{
-			name: `Maria Ribeiro`,
-			telephone: `22888888888`,
-			xp: true,
-		},
-		{
-			name: `Ana Mendes`,
-			telephone: `22111111111`,
-			xp: false,
-		},
-	]
+//Código para realizar a recuperação de dados do local storage
+	var peopleRaw = localStorage.getItem('people')
+	if (peopleRaw != null){
+		var people = JSON.parse(localStorage.getItem('people'))
+	} else{
+		var people = []
+	}
 function drawTable(){	
 	//convertendo a node list em vetor
 	currentLines = [...document.querySelectorAll('table.lista tbody .dynamic-content')]
-	//removendo elemento
+	//removendo elemento (o element corresponde à tr com classe dynamic content)
 	currentLines.forEach((element) => {
 		element.remove()
 	})

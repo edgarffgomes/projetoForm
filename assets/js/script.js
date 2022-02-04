@@ -27,10 +27,16 @@ function drawTable(){
 					${people[person].xp ? `<span style="color:green">Sim</span>` : `<span style="color:red">Não</span>`}
 				</td>
 				<td>
-					<button onclick="people.splice(${person}, 1); drawTable()"> Excluir </button>
+					<button onclick="deleteUser(${person})"> Excluir </button>
 				</td>
 			</tr>
 			`
 	}
 }
 drawTable()
+//função para realizar a presistência de exclusões dos itens em local storage
+function deleteUser(p){
+	people.splice(p, 1);
+	drawTable()
+	localStorage.setItem('people',JSON.stringify(people))
+}

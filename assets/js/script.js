@@ -28,6 +28,7 @@ function drawTable(){
 				</td>
 				<td>
 					<button onclick="deleteUser(${person})"> Excluir </button>
+					<a href="./form.html?person=${person}"> Alterar </a>
 				</td>
 			</tr>
 			`

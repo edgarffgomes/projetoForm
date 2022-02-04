@@ -12,11 +12,11 @@
 		</header>
 
 		<section class="menu">
-			<a href="./index.html">Home</a>
+			<a id="goHome" href="./index.html">Home</a>
 			<a href="./form.html">Cadastrar</a>
 		</section>
 
-		 <form class="formulario">
+		 <form class="formulario" onsubmit="testsForm(event)">
 		 	<div class="linha-formulario">
 			 	<label class="label-grande" for="name">Nome</label>
 			 	<input type="text" placeholder="Nome" name="name" id="name" required>
@@ -30,16 +30,17 @@
 		 	<div class="linha-formulario xp-line" style="display: flex;">
 			 	<label class="label-grande xp-line" for="xp">Experiência prévia</label>
 			 	<div>
-				 	<input type="radio" name="xp" id="xp-yes">
+				 	<input type="radio" name="xp" id="xp-yes" value="true">
 				 	<label  for="xp-yes">Sim</label>
 				 	<br>
-				 	<input type="radio" name="xp" id="xp-no">
+				 	<input type="radio" name="xp" id="xp-no" value="false">
 				 	<label  for="xp-no">Não</label>
 			 	</div>
 		 </div>
 
-		 	<input type="submit" name="">
+		 	<input type="submit">
 		 </form>
 
+		 <script src="../assets/js/script_form.js" type="text/javascript"></script>
 	</body>
 </html>

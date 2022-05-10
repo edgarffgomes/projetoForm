@@ -3,7 +3,7 @@
 
 > Status: Completo ✅
 > 
-### Projeto de construção de site que armazena experiência profissional.
+### Projeto de construção de site que cadastra usuários e armazena existência de experiência profissional.
 
 ## Funcionalidades implementadas:
 + Persistência de dados em Local Storage

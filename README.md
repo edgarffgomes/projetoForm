@@ -16,7 +16,7 @@
     <td> HTML5 </td>
     <td> CSS3 </td>
     <td> Javascript </td>
-    <td> Ecmascript </td>
+    <td> Ecmascript 6 </td>
   </tr>
 </table>
 
